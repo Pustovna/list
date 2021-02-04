@@ -6,23 +6,22 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <h1 class="visually-hidden">List</h1>
     <ul class="todo-list">
       <li class="todo-list-item">
         <label>
-          <input class="todo-list-input" type="checkbox" />
+          <input class="todo-list-input" type="button" />
           <span>item 1</span>
         </label>
       </li>
       <li class="todo-list-item">
         <label>
-          <input class="todo-list-input" type="checkbox" />
+          <input class="todo-list-input" type="button" />
           <span>item 2</span>
         </label>
       </li>
       <li class="todo-list-item">
         <label>
-          <input class="todo-list-input" type="checkbox" />
+          <input class="todo-list-input" type="button" />
           <span>item 3</span>
         </label>
       </li>
@@ -45,11 +44,20 @@
     <template id="task-template">
       <li class="todo-list-item">
         <label>
-          <input type="checkbox" class="todo-list-input" />
+          <input type="button" class="todo-list-input" />
           <span></span>
         </label>
       </li>
     </template>
+
+    <div class="modal">
+      <span>Delete?</span>
+      <div class="modal-buttons">
+        <button class="modal-button modal__true" data-button="yes">Yes</button>
+        <button class="modal-button modal__false" data-button="no">No</button>
+      </div>
+    </div>
+
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

@@ -31,6 +31,8 @@ form.addEventListener('submit', (evt) => {
 const showModal = (button) => {
     button.addEventListener('click', (e) => {
         modal.style.display = "flex";
+        const text = modal.querySelector('span');
+        text.textContent = 'Delete?';
         checkedItem = e.target;
     })
 };
